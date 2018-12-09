@@ -1,0 +1,7 @@
+
+
+UNLOAD ('select * from table_name')
+TO 's3://path_to_s3_bucket' credentials
+'aws_access_key_id= ;aws_secret_access_key= '
+parallel off
+gzip;
